@@ -5,7 +5,7 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "example-vpc"
+    Name = "main"
   }
 }
 
@@ -17,7 +17,7 @@ resource "aws_subnet" "public_subnet_1" {
   cidr_block        = "10.0.1.0/24"
 
   tags = {
-    Name = "public-subnet-1"
+    Name = "public_subnet_1"
   }
 
   map_public_ip_on_launch = true
@@ -31,7 +31,7 @@ resource "aws_subnet" "public_subnet_2" {
   cidr_block        = "10.0.2.0/24"
 
   tags = {
-    Name = "public-subnet-2"
+    Name = "public_subnet_2"
   }
 
   map_public_ip_on_launch = true
@@ -45,7 +45,7 @@ resource "aws_subnet" "private_subnet_1" {
   cidr_block = "10.0.4.0/24"
 
   tags = {
-    Name = "private-subnet-1"
+    Name = "private_subnet_1"
   }
 }
 
@@ -57,6 +57,6 @@ resource "aws_subnet" "private_subnet_2" {
   cidr_block = "10.0.5.0/24"
 
   tags = {
-    Name = "private-subnet-2"
+    Name = "private_subnet_2"
   }
 }

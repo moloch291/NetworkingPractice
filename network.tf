@@ -106,5 +106,5 @@ resource "aws_route_table_association" "Nat-Gateway-RT-Association" {
       aws_subnet.private_subnet_1.id,
       aws_subnet.private_subnet_2.id
     ]
-  route_table_id = aws_route_table.NAT-Gateway-RT.id
+  route_table_id = aws_route_table.NATgw_rt.id
 }
